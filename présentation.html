@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>NEON</title>
+<meta name="generator" content="WYSIWYG Web Builder 17 Trial Version - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/portfolio.css" rel="stylesheet">
+<link href="css/présentation.css" rel="stylesheet">
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery.ui.effect.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/util.min.js"></script>
+<script src="js/collapse.min.js"></script>
+<script src="js/dropdown.min.js"></script>
+<script src="js/skrollr.min.js"></script>
+<script>   
+   $(document).ready(function()
+   {
+      $("a[href*='#features1']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#features1').offset().top }, 600, 'easeOutCubic');
+      });
+      $('#navigationMenu .dropdown-toggle').dropdown({popperConfig:{placement:'bottom-start',modifiers:{computeStyle:{gpuAcceleration:false}}}});
+      $(document).on('click','.navigationMenu-navbar-collapse.show',function(e)
+      {
+         if ($(e.target).is('a') && ($(e.target).attr('class') != 'dropdown-toggle')) 
+         {
+            $(this).collapse('hide');
+         }
+      });
+      function skrollrInit()
+      {
+         skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
+      }
+      skrollrInit();
+   });
+</script>
+</head>
+<body>
+   <div id="wb_navigation">
+      <div id="navigation">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_navigationHeading" style="display:inline-block;width:100%;z-index:0;">
+                  <h1 id="navigationHeading">Portfolio</h1>
+               </div>
+            </div>
+            <div class="col-2">
+               <div id="wb_navigationMenu" style="display:inline-block;width:100%;z-index:1;">
+                  <div id="navigationMenu" class="navigationMenu" style="width:100%;height:auto !important;">
+                     <div class="container">
+                        <div class="navbar-header">
+                           <button title="Hamburger Menu" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navigationMenu-navbar-collapse">
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                           </button>
+                        </div>
+                        <div class="navigationMenu-navbar-collapse collapse">
+                           <ul class="nav navbar-nav">
+                              <li class="nav-item">
+                                 <a href="https://www.wysiwygwebbuilder.com/" class="nav-link">HOME</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a href="https://www.wysiwygwebbuilder.com/download.html" class="nav-link">DOWNLOAD</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a href="https://www.wysiwygwebbuilder.com/purchase.html" class="nav-link">PURCHASE</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a href="https://www.wysiwygwebbuilder.com/templates.html" class="nav-link">TEMPLATES</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a href="https://www.wysiwygwebbuilder.com/extensions.html" class="nav-link">EXTENSIONS</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_features1">
+      <div id="features1">
+         <div id="wb_featuresCard3" style="display:flex;z-index:2;" class="card">
+            <div id="featuresCard3-card-body">
+               <div id="featuresCard3-card-item0"><i class="fa fa-user-secret"></i></div>
+               <div id="featuresCard3-card-item1">Présentation</div>
+               <div id="featuresCard3-card-item2">Je m'appelle Hakan OZBEK, je m'intéresse au monde du piratage éthique et de la cybersécurité. <br><br>Mon intérêt pour la technologie est largement ancré dans ma quête de compréhension de la structure et de la flexibilité des ordinateurs. <br>J'aime repousser les limites de la sécurité pour anticiper les menaces et proposer des solutions fortes, tout en respectant les principes éthiques et juridiques. <br><br>C’est cette approche qui m’inspire à explorer constamment de nouvelles façons de protéger les espaces numériques complexes.</div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="upStickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:7;z-index:99999;" data-250-start="opacity:1;" data-start="opacity:0;">
+      <div id="wb_upIcon" style="position:absolute;left:9px;top:9px;width:24px;height:24px;text-align:center;z-index:3;">
+         <a href="#welcome"><div id="upIcon"><i class="fa fa-arrow-up"></i></div></a></div>
+   </div>
+   <div id="wb_footer">
+      <div id="footer">
+         <div class="col-1">
+            <div id="wb_footerText">
+               <p style="font-size:13px;line-height:16px;">© OZBEK Hakan - 2024</p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <a href="https://www.wysiwygwebbuilder.com" target="_blank"><img src="images/builtwithwwb17.png" alt="WYSIWYG Web Builder" style="position:absolute;left:441px;top:5229px;margin:0;border-width:0;z-index:250" width="16" height="16"></a>
+</body>
+</html>
